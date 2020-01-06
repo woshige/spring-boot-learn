@@ -1,0 +1,14 @@
+server:
+  port: 8080
+config.url: https://www.baidu.com
+config.maxNum: 1000
+spring:
+  redis:
+    database: 0
+    host: 192.168.47.101
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 5
+      max-wait: -1
