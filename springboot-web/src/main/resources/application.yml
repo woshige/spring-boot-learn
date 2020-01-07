@@ -12,3 +12,18 @@ spring:
       min-idle: 0
       max-active: 5
       max-wait: -1
+  session:
+    store-type: redis
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: postgres
+    password: 123456
+    url: jdbc:postgresql://192.168.47.101:5432/postgres?useUnicode=true&characterEncoding=utf8&currentSchema=public
+    druid:
+      max-active: 8
+      min-idle: 1
+      max-wait: 10000
+      validation-query: select 'X'
+      time-between-eviction-runs-millis: 60000
+    driver-class-name: org.postgresql.Driver
+
